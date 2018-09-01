@@ -8,6 +8,7 @@ import { environment } from '../environments/environment';
 import { EmmlibModule } from 'emmlib';
 
 import { ArticleModule } from './article/article.module';
+import { ClientModule } from './client/client.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { ArticleModule } from './article/article.module';
   imports: [
     BrowserModule,
     EmmlibModule,
-    ArticleModule,
+    ArticleModule, ClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

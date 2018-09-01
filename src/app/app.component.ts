@@ -12,6 +12,6 @@ export class AppComponent {
   }
 
   public TestLoder() {
-    this.core.Load("article-list");
+    this.core.Load("client-list");
   }
 }

@@ -1,0 +1,14 @@
+<p>
+  list works!
+</p>
+<button (click)="LoadList()" mat-raised-button color="primary" matBadge="8" matBadgeColor="accent">
+  Get
+</button>
+<button (click)="Update()" mat-raised-button>
+  Update
+</button>
+<ng-container *ngFor="let item of Items; let i = index;">
+  <div>
+    {{ item.Name }}
+  </div>
+</ng-container>
