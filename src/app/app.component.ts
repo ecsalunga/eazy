@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EmmlibService } from 'emmlib';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'eazy';
+  constructor(private core: EmmlibService) {
+
+  }
+
+  public TestLoder() {
+    this.core.Load("article-list");
+  }
 }
