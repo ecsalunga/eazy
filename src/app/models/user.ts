@@ -1,6 +1,6 @@
-import { Item } from '../../data';
+import { Item } from '../data';
 
-export class Client extends Item {
+export class User extends Item {
     UID: string;
     Name: string;
     Email: string;

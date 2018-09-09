@@ -12,6 +12,7 @@ export class AppComponent {
   }
 
   public TestLoder() {
+    
     this.core.Load("client-list");
   }
 }

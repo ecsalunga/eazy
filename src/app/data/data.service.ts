@@ -24,7 +24,7 @@ export class DataService {
     return items;
   }
 
-  public Save(path: string, item: any) {
+  public SaveList(path: string, item: any) {
     if(item.key != null)
       this.fireDB.object(path + '/' + item.key).update(item);
     else
