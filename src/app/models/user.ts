@@ -1,4 +1,4 @@
-import { Item } from '../data';
+import { Item } from './item';
 
 export class User extends Item {
     UID: string;

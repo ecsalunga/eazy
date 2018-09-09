@@ -6,7 +6,9 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
 import { EmmlibModule } from 'emmlib';
+import { DataModule } from './data/data.module';
 
+import { UserModule } from './user/user.module';
 import { ArticleModule } from './article/article.module';
 import { ClientModule } from './client/client.module';
 
@@ -16,8 +18,8 @@ import { ClientModule } from './client/client.module';
   ],
   imports: [
     BrowserModule,
-    EmmlibModule,
-    ArticleModule, ClientModule,
+    EmmlibModule, DataModule,
+    UserModule, ArticleModule, ClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

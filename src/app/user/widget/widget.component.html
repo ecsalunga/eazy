@@ -1,0 +1,10 @@
+<ng-container *ngIf="data.State.IsLogin; else login">
+  <div>
+    <button (click)="LogOut()">LogOut {{ data.State.User.Name }}</button>
+  </div>
+</ng-container>
+<ng-template #login>
+  <div>
+    <button (click)="Login()">Login</button>
+  </div>
+</ng-template>
