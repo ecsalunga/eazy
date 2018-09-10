@@ -7,6 +7,7 @@ export class State {
     User: User;
     Users: Array<User>;
     IsLogin: boolean;
+    Title: string = "Home";
 
     constructor() {
         this.IsLogin = false;

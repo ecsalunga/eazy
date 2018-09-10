@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { EmmlibService } from 'emmlib';
+import { EmmlibService, Delay } from 'emmlib';
 import { DataService } from './data';
 
 @Component({
@@ -8,12 +8,17 @@ import { DataService } from './data';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private core: EmmlibService, private data: DataService) {
+  constructor(private core: EmmlibService, public data: DataService) {
     this.data.Init();
+    this.init();
   }
 
   public TestLoder() {
-    
+    this.core.Load("user-list");
+  }
+
+  @Delay(500)
+  private init() {
     this.core.Load("client-list");
   }
 }

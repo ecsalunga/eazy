@@ -1,10 +1,12 @@
 export const Config = {
     DefaultPhoto: "/assets/profile.png",
-    UserTypes: [
-        { TypeId: 1, Name: 'Administrator' }
-        ,{ TypeId: 2, Name: 'Manager' }
-        ,{ TypeId: 3, Name: 'Staff' }
-    ],
+    UserTypes: {
+        Administrator: 1,
+        Manager: 2,
+        Staff: 3,
+        Member: 4,
+        Guest: 5
+    },
     UpdateTypes: {
         LogIn: "LogIn",
         LogOut: "LogOut",

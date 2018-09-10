@@ -105,6 +105,7 @@ export class DataService {
         user.Contact1 = this.State.FBUser.phoneNumber;
         user.JoinDate = this.core.Stamp.Timestamp;
         user.ActionDate = this.core.Stamp.Timestamp;
+        user.TypeId = Config.UserTypes.Guest;
         this.SaveList("/user/items", user);
       }
     }

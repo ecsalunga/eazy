@@ -10,4 +10,5 @@ export class User extends Item {
     Contact2: string;
     JoinDate: number;
     ActionDate: number;
+    TypeId: number;
 }
